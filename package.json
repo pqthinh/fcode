@@ -6,14 +6,16 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
+    "forever": "forever start index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
+    "forever": "^4.0.1",
     "iohook": "^0.6.6",
-    "node-cron": "^3.0.0",
     "mysql2": "^2.0.2",
-    "express": "^4.17.1"
+    "node-cron": "^3.0.0"
   }
 }
