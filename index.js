@@ -19,7 +19,7 @@ ioHook.on("keypress", (event) => {
 ioHook.start();
 
 // cron schedule
-cron.schedule("30 * * * *", () => {
+cron.schedule("0-59 * * * *", () => {
   console.log("sync data");
   synchronizedData.sync();
 });
